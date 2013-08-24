@@ -144,9 +144,9 @@ function! s:ChangeToRootDirectory()
       call s:ChangeDirectory(expand('%:p:h'))
     endif
   else
-    if exists('+autochdir')
-      set noautochdir
-    endif
+    " if exists('+autochdir')
+      " set noautochdir
+    " endif
     call s:ChangeDirectory(root_dir)
   endif
 endfunction
